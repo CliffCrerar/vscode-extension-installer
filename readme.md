@@ -10,17 +10,17 @@ DISCLAIMER: At the moment this is a quick Saturday evening DX project. Dont expe
 
 ### Default Extension Manifest
 
-* (Code Spell Checker)[https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker]
-* (JavaScript Console Utils)[https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils]
-* (Path Intellisense)[https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense]
-* (Git Lens)[https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens]
-* (Git Graph)[https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph]
-* (Material Icons Theme)[https://www.google.com/search?q=pkief.material-icon-theme&rlz=1C5CHFA_enZA891ZA891&oq=pkief.material-icon-theme&aqs=chrome..69i57j0.263j0j4&sourceid=chrome&ie=UTF-8]
-* (SCSS Formatter for VSCODE)[https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter]
-* (CSS Class Intellisense)[https://github.com/Zignd/HTML-CSS-Class-Completion]
-* (JavaScript Snippets)[https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets]
-* (VSCODE Intellicode)[https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode]
-* (JavaScript ES6 strings)[https://www.google.com/search?q=zjcompt.es6-string-javascript&rlz=1C5CHFA_enZA891ZA891&oq=zjcompt.es6-string-javascript&aqs=chrome..69i57.275j0j4&sourceid=chrome&ie=UTF-8]
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftwarecode-spell-checker)
+* [JavaScript Console Utils](https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils)
+* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+* [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+* [Material Icons Theme](https://www.google.com/search?q=pkief.material-icon-theme&rlz=1C5CHFA_enZA891ZA891&oq=pkief.material-icon-theme&aqs=chrome..69i57j0.263j0j4&sourceid=chrome&ie=UTF-8)
+* [SCSS Formatter for VSCODE](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+* [CSS Class Intellisense](https://github.com/Zignd/HTML-CSS-Class-Completion)
+* [JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+* [VSCODE Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeamvscodeintellicode)
+* [JavaScript ES6 strings](https://www.google.com/search?q=zjcompt.es6-string-javascript&rlz=1C5CHFA_enZA891ZA891&oq=zjcompt.es6-string-javascript&aqs=chrome.69i57.275j0j4&sourceid=chrome&ie=UTF-8)
 
 ## Create a custom list
 
