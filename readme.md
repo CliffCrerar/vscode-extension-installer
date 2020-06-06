@@ -2,7 +2,6 @@
 
 > #### DISCLAIMER: At the moment this is a quick Saturday evening DX project. Don't expect miracles.
 
-
 ## Motivation
 
 `Vscode` extension market place has so many great extension, but sometimes when you come back from the candy store with all kinds of different types of amazingness they dont always gel and you end up having a bad time. Having a list of my favorite extensions means that as soon as I get tired of my shit not gelling I simply kill the `extensions` folder run this app and boom my minimal pristine devenv is my little piece of dev heaven again.
