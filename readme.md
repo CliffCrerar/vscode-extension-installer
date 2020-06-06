@@ -1,6 +1,6 @@
 # VSCODE Extension installer
 
-At the moment this is a quick Saturday evening, DX project. Dont expect miracles.
+DISCLAIMER: At the moment this is a quick Saturday evening DX project. Dont expect miracles.
 
 ## Default config
 
