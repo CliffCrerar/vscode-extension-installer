@@ -1,4 +1,4 @@
-# VSCODE Extension installer
+# Visual Studio Code Extension installer
 
 > #### DISCLAIMER: At the moment this is a quick Saturday evening DX project. Don't expect miracles.
 
