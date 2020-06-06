@@ -26,7 +26,7 @@ DISCLAIMER: At the moment this is a quick Saturday evening DX project. Dont expe
 
 1. Create a gist like this one -> [github gist](https://gist.githubusercontent.com/CliffCrerar/a47b5153056820682bc3259795b94544/raw/88e07596c19f1073f4f822649dc6de33b1a6cd6e/vscode-bear-essentials.txt)
 
-3. (optional) add to the list by getting the `publisher.extension` extension unique identifier. 
+3. Add to the list by getting the `publisher.extension` extension unique identifier. 
 
 >This extension key appears next to the extension title of each extension. Here is a link[`VSCODE market place`](https://marketplace.visualstudio.com/vscode).) Alternatively look at the extensions tab in `VSCODE`.
 
