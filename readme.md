@@ -4,7 +4,7 @@
 
 ## Default config
 
-1. clone this repo `https://github.com/CliffCrerar/vscode-extension-installer.git`;
+1. clone this repo `https://github.com/CliffCrerar/vscode-extension-installer.git`.
 
 2. run `cd vscode-extension-installer && npm start`
 
