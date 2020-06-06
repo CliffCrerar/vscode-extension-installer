@@ -1,0 +1,25 @@
+{
+    "name": "vscode-extension-installer",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "nodemon app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/vscode-extension-installer.git"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Cliff Crerar",
+        "email": "info@infinityarc.net",
+        "url": "https://www.cliff-crerar.tech"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/vscode-extension-installer/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/vscode-extension-installer#readme"
+}
