@@ -35,7 +35,7 @@
 
 3. Add to the list by getting the `publisher.extension` extension unique identifier. 
 
->This extension key appears next to the extension title of each extension. Here is a link[`VSCODE market place`](https://marketplace.visualstudio.com/vscode).) Alternatively look at the extensions tab in `VSCODE`.
+>This extension key appears next to the extension title of each extension. Here is a link[`VSCODE market place`](https://marketplace.visualstudio.com/vscode). Alternatively look at the extensions tab in `VSCODE`.
 
 4. Save the gist once satisfied, still on the same gist click the `raw` button in the github console.
 
