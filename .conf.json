@@ -1,0 +1,13 @@
+{
+    "gist":"a47b5153056820682bc3259795b94544",
+    "baseUrl":"https://gist.githubusercontent.com/CliffCrerar/a47b5153056820682bc3259795b94544/raw/5f00a381565b1281a12f6a3b573783962671954b/",
+    "environments": {
+        "BaseConfig":"raw/24dc4ce573bf7c710909fc564bae06c0ec2e04d1/ext-installer--essentials-list.txt",
+        "Angular":"raw/24dc4ce573bf7c710909fc564bae06c0ec2e04d1/ext-installer--angular-dev-list.txt",
+        "Azure":"raw/24dc4ce573bf7c710909fc564bae06c0ec2e04d1/ext-intaller--azure-list.txt",
+        "Docker":"raw/24dc4ce573bf7c710909fc564bae06c0ec2e04d1/ext-installer--docker.txt",
+        "AspNet":"raw/24dc4ce573bf7c710909fc564bae06c0ec2e04d1/ext-installer--aspnet-list.txt"
+    }
+}
+
+
