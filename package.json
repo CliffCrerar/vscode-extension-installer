@@ -1,7 +1,7 @@
 {
     "name": "vscode-extension-installer",
     "version": "0.0.1",
-    "description": "",
+    "description": "Visual studio code extension management",
     "main": "index.js",
     "scripts": {
         "test": "jest",
