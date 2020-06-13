@@ -1,70 +1,58 @@
-/**
- * Application entry point
- */
 
-const
-    http = require('https'),
-    codeCommand = 'code --install-extension',
-    cp = require('child_process'),
-    fs = require('fs'),
-    debug = false;
+const processList = require('./install-list');
 
-const url = fs.readFileSync('./.conf', 'utf8');
+const defaultRun = true;
+const defaultList = require('fs').readFileSync('./.conf');
 
-checkCodeInstallation();
+const urlFirst = 'https://gist.githubusercontent.com/CliffCrerar/a47b5153056820682bc3259795b94544/raw/';
+const rev = 'a9baf42926583a6fb226c0c0aab75419c0ab1675/';
 
-function checkCodeInstallation(){
-    cp.exec('code',(err,stdOut)=>{
-        if(err){
-            getExtensionList(false)
-        } else {
-            getExtensionList(true)
-        }
-    });
-}
+const List_files = [
+    /* 0 */'bear-essentials',
+    /* 1 */'angular', 'docker',
+    /* 2 */'azure',
+    /* 3 */'bootstrap',
+    /* 4 */'aspnet',
+    /* 5 */'bootstrap',
+    /* 6 */'ionic'
+];
 
+const install = [
+    List_files[0], // bear-essentials
+    List_files[1], // angular
+    List_files[2], // docker
+    List_files[3], // azure
+    // List_files[4], // asp-net
+    // List_files[5], // bootstrap
+    List_files[6] // ionic
+]
 
-function getExtensionList(runInstall){
+if (defaultRun) {
 
-    try {
-        if(!runInstall) throw new Error('Vscode CLI Is not configured. See this link https://code.visualstudio.com/docs/editor/command-line');
-        http.request(url, (response) => {
-            debug && console.log('STAUS:', response.statusCode)
-            debug && console.log('HEADERS:', response.headers)
-            let extList = '';
-            response.on('data', chunk => extList += chunk)
-            response.on('end', () => {
-                installExtensions(extList)
-            })
-            response.on('error', (error) => {
-                throw new ErrorEvent('Error getting Extensions', error);
-            })
-        }).end();
-    } catch (err) {
-        console.log('ERROR!')
-        console.error(err.message);
+    processList(defaultList, null, res => console.log('done'));
+
+} else {
+
+    require('child_process').execSync('rm -rd ~/.vscode/extensions');
+    function Install() {
+        return install.map(list => new Promise((resolve) => {
+            processList(`${urlFirst}${rev}${list}.txt`, null, (res) => {
+                console.log('res: ', res);
+                resolve(res);
+            });
+        }))
     }
+
+    Promise
+    .all(Install()).then(res => {
+        console.log('Success: ', res);
+    })
+    .catch(err => console.log(err));
+
 }
 
-function installExtensions(list) {
-    debug && console.log(list)
-    const jsonList = list.split(/\n/);
-    debug && console.log('json list', jsonList)
-    const installation = jsonList.map(ext =>
-        new Promise((resolve, reject) => {
-            cp.exec(`${codeCommand} ${ext}`,(err,stdout,stderr)=>{
-                if(err){
-                    debug && console.error(err);
-                    return reject(err);
-                }
-                console.log(stdout);
-                resolve(stdout)
-            })
-        })
-    );
 
-    const p = Promise.all(installation);
-    p.then((onFulfilled)=>{
-        process.exit(0);
-    });
-}
+
+
+
+
