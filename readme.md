@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/CliffCrerar/vscode-extension-installer)
+
 # Visual Studio Code Extension installer
 
 > #### DISCLAIMER: At the moment this is a quick Saturday evening DX project. Don't expect miracles.
