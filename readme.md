@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/CliffCrerar/vscode-extension-installer)
+
 # Visual Studio Code Extension installer
 
 > #### DISCLAIMER: At the moment this is a quick Saturday evening DX project. Don't expect miracles.
@@ -25,6 +27,9 @@
 * [JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 * [VSCODE Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeamvscodeintellicode)
 * [JavaScript ES6 strings](https://www.google.com/search?q=zjcompt.es6-string-javascript&rlz=1C5CHFA_enZA891ZA891&oq=zjcompt.es6-string-javascript&aqs=chrome.69i57.275j0j4&sourceid=chrome&ie=UTF-8)
+* [Auto Tag Rename](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+* [CSS Vendor Auto Prefixer](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer)
 
 ## Create a custom list
 
@@ -32,7 +37,7 @@
 
 3. Add to the list by getting the `publisher.extension` extension unique identifier. 
 
->This extension key appears next to the extension title of each extension. Here is a link[`VSCODE market place`](https://marketplace.visualstudio.com/vscode).) Alternatively look at the extensions tab in `VSCODE`.
+>This extension key appears next to the extension title of each extension. Here is a link[`VSCODE market place`](https://marketplace.visualstudio.com/vscode). Alternatively look at the extensions tab in `VSCODE`.
 
 4. Save the gist once satisfied, still on the same gist click the `raw` button in the github console.
 
