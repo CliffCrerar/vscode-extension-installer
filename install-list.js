@@ -16,7 +16,6 @@ function processList(url,installOrRemove,cb) {
 
     const codeCommand = installOrRemove === 'u' ? codeUninstallCommand : codeInstallCommand
 
-
     function getExtensionList(runInstall) {
 
         try {
@@ -27,7 +26,7 @@ function processList(url,installOrRemove,cb) {
                 let extList = '';
                 response.on('data', chunk => extList += chunk)
                 response.on('end', () => {
-                    installExtensions(extList)
+                    installExtensions(extList.toString())
                 })
                 response.on('error', (error) => {
                     throw new ErrorEvent('Error getting Extensions', error);
@@ -40,6 +39,9 @@ function processList(url,installOrRemove,cb) {
     }
 
     function installExtensions(list) {
+        if(!fs.existsSync(process.env.HOME+'/.vscode')){
+            fs.mkdirSync(process.env.HOME+'/.vscode')
+        }
         debug && console.log(list)
         const jsonList = list.split(/\n/);
         debug && console.log('json list', jsonList)
@@ -50,8 +52,9 @@ function processList(url,installOrRemove,cb) {
                         debug && console.error(err);
                         return reject(err);
                     }
-                    console.log(stdout);
-                    resolve(stdout)
+                    console.error(stderr.toString());
+                    console.log(stdout.toString());
+                    resolve(stdout.toString)
                 })
             })
         );
@@ -69,3 +72,7 @@ function processList(url,installOrRemove,cb) {
 }
 
 module.exports = processList;
+
+process.on('uncaughtException', function (err) {
+    console.log(err);
+}); 
