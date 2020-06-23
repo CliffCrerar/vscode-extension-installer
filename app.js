@@ -21,12 +21,12 @@ const List_files = [
 
 const install = [
     List_files[0], // bear-essentials
-    //List_files[1], // angular
+    List_files[1], // angular
     List_files[2], // docker
     //List_files[3], // azure
-    List_files[4], // bootstrap
-     List_files[5], // aspnet
-    //List_files[6] // ionic
+    //List_files[4], // bootstrap
+    //List_files[5], // aspnet
+    List_files[6], // ionic
     List_files[7] // aws
 ]
 
